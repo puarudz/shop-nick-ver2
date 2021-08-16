@@ -1,0 +1,51 @@
+
+.fsslider {
+    -moz-user-select: none;
+    color: #000;
+    display: inline-block;
+    font-family: "Lucida Grande","Trebuchet MS",sans-serif;
+    font-size: 11px;
+    height: 30px;
+    line-height: 24px;
+    min-width: 150px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.fsslider > * {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+.fsslider > .fsfull-value, .fsslider > .fssel-value {
+    height: 2px;
+    left: 0;
+    margin-top: -1px;
+    right: 0;
+}
+.fsslider > .fsfull-value {
+    background: #d8d8d8 none repeat scroll 0 0;
+    width: 100%;
+}
+.fsslider > .fscaret, .fsslider > .fssel-left, .fsslider > .fssel-right {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    line-height: 30px;
+    min-width: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 0;
+}
+.fsslider > .fssel-value {
+    background: #41a85f none repeat scroll 0 0;
+    height: 6px;
+    margin-top: -2px;
+    right: 50%;
+}
+.fsslider.fsdisabled {
+    color: #c8c8c8;
+}
+.fsslider.fsdisabled > .fssel-value {
+    background: #c8c8c8 none repeat scroll 0 0;
+}
